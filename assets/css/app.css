@@ -1,0 +1,12 @@
+/* This file is for your main application css. */
+
+.control-page {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
