@@ -11,13 +11,14 @@ config :ui, UiWeb.Endpoint,
   secret_key_base: "OtrwkSkexbFs8K1dQqb32zAeXHsb7kIhqkDq7RRKVqndKNeTMSS7mtrT/HAGjZy+",
   render_errors: [view: UiWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Ui.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+           adapter: Phoenix.PubSub.PG2],
+  check_origin: false
 
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
-
+  
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"

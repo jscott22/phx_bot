@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Landing from './Landing';
+import Controls from './Controls';
 
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
 
   render() {
     return (
-      <Landing />
+      <Controls />
     );
   }
 }

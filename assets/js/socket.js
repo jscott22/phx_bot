@@ -70,12 +70,28 @@ export const driveBackwards = () => {
   controlChannel.push('drive:backwards');
 };
 
-export const turnLeft = () => {
-  controlChannel.push('turn:left');
+export const driveLeft = () => {
+  controlChannel.push('drive:left');
 };
 
-export const turnRight = () => {
-  controlChannel.push('turn:right');
+export const driveRight = () => {
+  controlChannel.push('drive:right');
+};
+
+export const stopForward = () => {
+  controlChannel.push('stop:forward');
+};
+
+export const stopBackwards = () => {
+  controlChannel.push('stop:backwards');
+};
+
+export const stopLeft = () => {
+  controlChannel.push('stop:left');
+};
+
+export const stopRight = () => {
+  controlChannel.push('stop:right');
 };
 
 export default socket;
